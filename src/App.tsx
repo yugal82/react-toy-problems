@@ -1,4 +1,5 @@
 import './App.css';
+import ImageSliderMain from './ImageSliderMain';
 // import InfiniteScrollMain from './InfiniteScrollMain';
 // import PaginationMain from './PaginationMain';
 
@@ -7,6 +8,7 @@ const App = () => {
     <div className="">
       {/* <PaginationMain /> */}
       {/* <InfiniteScrollMain /> */}
+      <ImageSliderMain />
     </div>
   );
 };
