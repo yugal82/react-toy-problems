@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import PaginationPosts from './components/PaginationPosts';
-import { Post } from './model';
-import Pagination from './components/Pagination';
+import PaginationPosts from '../components/PaginationPosts';
+import { Post } from '../model';
+import Pagination from '../components/Pagination';
 
 const PaginationMain = () => {
   // states

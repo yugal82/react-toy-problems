@@ -1,5 +1,5 @@
 import { useCallback, useRef, useState } from 'react';
-import useBookSearch from './hooks/useBookSearch';
+import useBookSearch from '../hooks/useBookSearch';
 
 const InfiniteScrollMain = () => {
   const [query, setQuery] = useState<string>('');

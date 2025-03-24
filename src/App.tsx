@@ -1,8 +1,8 @@
 import './App.css';
-import ProgressBarMain from './ProgressBarMain';
-// import ImageSliderMain from './ImageSliderMain';
-// import InfiniteScrollMain from './InfiniteScrollMain';
-// import PaginationMain from './PaginationMain';
+// import ProgressBarMain from './main components/ProgressBarMain';
+// import ImageSliderMain from './main components/ImageSliderMain';
+// import InfiniteScrollMain from './main components/InfiniteScrollMain';
+// import PaginationMain from './main components/PaginationMain';
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
       {/* <PaginationMain /> */}
       {/* <InfiniteScrollMain /> */}
       {/* <ImageSliderMain /> */}
-      <ProgressBarMain />
+      {/* <ProgressBarMain /> */}
     </div>
   );
 };
