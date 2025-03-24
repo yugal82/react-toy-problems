@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import ProgressBar from './components/ProgressBar';
 
 const ProgressBarMain = () => {
-  const progressVals = [5, 10, 23, 64, 90, 100];
-
   const [progress, setProgress] = useState<number>(0);
   const [isComplete, setIsComplete] = useState<boolean>(false);
 
