@@ -4,3 +4,11 @@ export type Post = {
     title: string;
     body: string;
 };
+
+
+export type ExplorerFolder = {
+    id: string,
+    name: string,
+    isFolder: boolean,
+    items: ExplorerFolder[]
+}

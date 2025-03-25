@@ -1,5 +1,6 @@
 import './App.css';
-import GridLightsMain from './main components/GridLightsMain';
+import FileExplorerMain from './main components/FileExplorerMain';
+// import GridLightsMain from './main components/GridLightsMain';
 // import ProgressBarMain from './main components/ProgressBarMain';
 // import ImageSliderMain from './main components/ImageSliderMain';
 // import InfiniteScrollMain from './main components/InfiniteScrollMain';
@@ -12,7 +13,8 @@ const App = () => {
       {/* <InfiniteScrollMain /> */}
       {/* <ImageSliderMain /> */}
       {/* <ProgressBarMain /> */}
-      <GridLightsMain />
+      {/* <GridLightsMain /> */}
+      <FileExplorerMain />
     </div>
   );
 };
