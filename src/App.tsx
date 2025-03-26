@@ -1,5 +1,6 @@
 import './App.css';
-import AutoCompleteMain from './main components/AutoCompleteMain';
+import OtpLoginMain from './main components/OtpLoginMain';
+// import AutoCompleteMain from './main components/AutoCompleteMain';
 // import FileExplorerMain from './main components/FileExplorerMain';
 // import GridLightsMain from './main components/GridLightsMain';
 // import ProgressBarMain from './main components/ProgressBarMain';
@@ -16,7 +17,8 @@ const App = () => {
       {/* <ProgressBarMain /> */}
       {/* <GridLightsMain /> */}
       {/* <FileExplorerMain /> */}
-      <AutoCompleteMain />
+      {/* <AutoCompleteMain /> */}
+      <OtpLoginMain />
     </div>
   );
 };
