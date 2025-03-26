@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { ExplorerFolder } from '../model';
 import { AiFillFileAdd, AiFillFolderAdd } from 'react-icons/ai';
 
 type Props = {
   explorer: ExplorerFolder;
+  handleInsertNode: (id: string, name: string, isFolder: boolean | null) => void;
 };
 
 type ShowInputType = {
@@ -11,7 +12,7 @@ type ShowInputType = {
   isFolder: boolean | null;
 };
 
-const Folder = ({ explorer }: Props) => {
+const Folder = ({ explorer, handleInsertNode }: Props) => {
   const [expand, setExpand] = useState<boolean>(false);
   const [showInput, setshowInput] = useState<ShowInputType>({
     visible: false,
@@ -23,8 +24,9 @@ const Folder = ({ explorer }: Props) => {
     setExpand(true);
   };
 
-  const onSubmitNew = (e: any) => {
-    if (e?.keyCode == 13 && e?.target.value) {
+  const onAddNewNode = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e?.keyCode == 13 && e?.target?.value) {
+      handleInsertNode(explorer?.id, e.target.value, showInput?.isFolder);
       setshowInput({ visible: false, isFolder: null });
     }
   };
@@ -46,7 +48,7 @@ const Folder = ({ explorer }: Props) => {
             <div>
               {showInput?.isFolder ? '📁' : '📄'}
               <input
-                onKeyDown={onSubmitNew}
+                onKeyDown={(e) => onAddNewNode(e)}
                 type="text"
                 autoFocus
                 onBlur={() => setshowInput({ visible: false, isFolder: null })}
@@ -55,7 +57,7 @@ const Folder = ({ explorer }: Props) => {
             </div>
           )}
           {explorer?.items?.map((exp: ExplorerFolder) => {
-            return <Folder key={exp?.id} explorer={exp} />;
+            return <Folder handleInsertNode={handleInsertNode} key={exp?.id} explorer={exp} />;
           })}
         </div>
       </div>

@@ -1,7 +1,7 @@
 import './App.css';
-import OtpLoginMain from './main components/OtpLoginMain';
+// import OtpLoginMain from './main components/OtpLoginMain';
 // import AutoCompleteMain from './main components/AutoCompleteMain';
-// import FileExplorerMain from './main components/FileExplorerMain';
+import FileExplorerMain from './main components/FileExplorerMain';
 // import GridLightsMain from './main components/GridLightsMain';
 // import ProgressBarMain from './main components/ProgressBarMain';
 // import ImageSliderMain from './main components/ImageSliderMain';
@@ -16,9 +16,9 @@ const App = () => {
       {/* <ImageSliderMain /> */}
       {/* <ProgressBarMain /> */}
       {/* <GridLightsMain /> */}
-      {/* <FileExplorerMain /> */}
+      <FileExplorerMain />
       {/* <AutoCompleteMain /> */}
-      <OtpLoginMain />
+      {/* <OtpLoginMain /> */}
     </div>
   );
 };
