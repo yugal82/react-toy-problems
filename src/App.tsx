@@ -1,4 +1,5 @@
 import './App.css';
+import TabFormMain from './main components/TabFormMain';
 // import OtpLoginMain from './main components/OtpLoginMain';
 // import AutoCompleteMain from './main components/AutoCompleteMain';
 // import FileExplorerMain from './main components/FileExplorerMain';
@@ -25,6 +26,7 @@ const App = () => {
       {/* <FileExplorerMain /> */}
       {/* <AutoCompleteMain /> */}
       {/* <OtpLoginMain /> */}
+      <TabFormMain />
 
       {/* Higher Order Component */}
       {/* <EnhancedComponent /> */}
