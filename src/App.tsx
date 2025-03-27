@@ -1,5 +1,7 @@
 import './App.css';
-import TabFormMain from './main components/TabFormMain';
+import { ThemeProvider, useTheme } from './context/useLightDarkContext';
+import LightDarkMain from './main components/LightDarkMain';
+// import TabFormMain from './main components/TabFormMain';
 // import OtpLoginMain from './main components/OtpLoginMain';
 // import AutoCompleteMain from './main components/AutoCompleteMain';
 // import FileExplorerMain from './main components/FileExplorerMain';
@@ -16,8 +18,10 @@ import TabFormMain from './main components/TabFormMain';
 // const EnhancedComponent = withDataFetching(MyComponent, 'https://jsonplaceholder.typicode.com/posts');
 
 const App = () => {
+  const { theme } = useTheme();
+
   return (
-    <div className="">
+    <div className={`${theme === 'light' ? 'bg-white text-black' : 'bg-black text-white'} min-h-screen`}>
       {/* <PaginationMain /> */}
       {/* <InfiniteScrollMain /> */}
       {/* <ImageSliderMain /> */}
@@ -26,7 +30,8 @@ const App = () => {
       {/* <FileExplorerMain /> */}
       {/* <AutoCompleteMain /> */}
       {/* <OtpLoginMain /> */}
-      <TabFormMain />
+      {/* <TabFormMain /> */}
+      <LightDarkMain />
 
       {/* Higher Order Component */}
       {/* <EnhancedComponent /> */}
